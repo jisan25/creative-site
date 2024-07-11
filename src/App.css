@@ -1,0 +1,76 @@
+@import "index.css";
+
+/**
+* Template Name: Corporate
+* Started: September 12 2023 with Bootstrap v5.3.1
+* Author: Shihabun Mobin Jisan
+*/
+
+/*------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #4154f1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+/* css for go to top button */
+
+.go-to-top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+}
+.top-btn {
+  font-size: 2rem;
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
+  background-color: #4154f1;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.top-btn--icon {
+  animation: gototop 1.2s linear infinite alternate-reverse;
+}
+@keyframes gototop {
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
+}
