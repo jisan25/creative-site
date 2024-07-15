@@ -116,7 +116,7 @@ const Requirements = ({ job }) => {
         </div>
 
       
-        {/* role */}
+        {/* roles */}
         <div className="mb-4">
           <h3 className="h3">Role</h3>
           <ul className="ml-5" style={{ listStyle: "disc" }}>
