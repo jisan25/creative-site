@@ -53,7 +53,7 @@ const Requirements = ({ job }) => {
             <i className="fa fa-print"></i>
           </div>
         </div>
-        <div className="card bg-light-gray p-3 mb-3">
+        <div className="card bg-light-gray p-3 mb-3 new">
           <h5 className="text-pink">Summary</h5>
           <div className="row job_summary">
             <div className="col-lg-4">
