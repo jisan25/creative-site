@@ -34,11 +34,9 @@ const JoinTeamPage = () => {
           <div className="col-lg-9" style={{ paddingRight: "2.25rem" }}>
             <div className="tab-content">
               {jobList &&
-                jobList.map((job) => (
+                jobList.map((job, index) => (
                   <div
-                    className={`tab-pane fade ${
-                      job.job_title === "WEB DEVELOPER" && "show active"
-                    }`}
+                    className={`tab-pane fade ${index === 0 && "show active"}`}
                     role="tabpanel"
                     id={job.job_title}
                   >

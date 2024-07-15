@@ -11,7 +11,7 @@ import GoToTop from "./components/GoToTop";
 import WaChat from "./components/WaChat";
 import Footer from "./components/Footer";
 import Offer from "./components/Offer";
-// import CareerPage from "./pages/Career";
+import CareerPage from "./pages/Career";
 import ContactPage from "./pages/contact";
 import BecomeAPartnerPage from "./pages/become-a-partner";
 import JoinTeamPage from "./pages/join-team";
@@ -41,7 +41,7 @@ const App = () => {
       <Header offer={offer} />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/career" element={<CareerPage />} /> */}
+        <Route path="/career" element={<CareerPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/become-a-partner" element={<BecomeAPartnerPage />} />
         <Route path="/industry-list" element={<IndustryListPage />} />

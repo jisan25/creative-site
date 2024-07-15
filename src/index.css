@@ -11,6 +11,22 @@
 
 /* custom css */
 
+/* ---- join team ------*/
+
+.text-pink {
+  color: #dd89a8;
+}
+
+.bg-light-gray {
+  background-color: #f4f4f4;
+}
+.job_summary p {
+  margin-bottom: 5px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /* Full Screen Overlay Navigation */
 
 .menu-wrapper {

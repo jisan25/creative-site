@@ -35,6 +35,60 @@ const Requirements = ({ job }) => {
       {joinForm && <PopUpJoinForm />}
 
       <div className="requirements">
+        <div className="d-flex gap-2 justify-content-end align-items-end mb-3">
+          <button onClick={() => applyNow()} className="btn btn-primary">
+            Apply Now
+          </button>
+          <div className="card gap-2 px-3 flex-row" style={{ padding: "7px" }}>
+            <div>
+              <i className="fa fa-share text-secondary"></i> Share:
+            </div>
+            <div className="d-flex gap-3 align-items-center">
+              <i style={{color:"#3b5998"}} className="fa fa-facebook cursor-pointer"></i>
+              <i style={{color:"#0077B5 "}} className="fa fa-linkedin cursor-pointer"></i>
+              <i style={{color:"#25D366"}} className="fa fa-whatsapp cursor-pointer"></i>
+            </div>
+          </div>
+          <div className="card cursor-pointer" style={{ padding: "10px" }}>
+            <i className="fa fa-print"></i>
+          </div>
+        </div>
+        <div className="card bg-light-gray p-3 mb-3">
+          <h5 className="text-pink">Summary</h5>
+          <div className="row job_summary">
+            <div className="col-lg-4">
+              <p>
+                Vacancy: <b>5</b>
+              </p>
+            </div>
+            <div className="col-lg-4">
+              <p>
+                Age: <b>20 to 40 years</b>
+              </p>
+            </div>
+            <div className="col-lg-4">
+              <p>
+                Location: <b>Dhaka</b>
+              </p>
+            </div>
+            <div className="col-lg-4">
+              <p>
+                Salary: <b>Negotiable</b>
+              </p>
+            </div>
+            <div className="col-lg-4">
+              <p>
+                Experience: <b>At most 1 Year</b>
+              </p>
+            </div>
+            <div className="col-lg-4">
+              <p>
+                Published: <b>11 Jul 2024</b>
+              </p>
+            </div>
+          </div>
+        </div>
+
         <h2 className="h1 text-uppercase mb-4 font-bold">{job_title}</h2>
         {/* role */}
         <div className="mb-4">

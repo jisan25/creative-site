@@ -27,11 +27,9 @@ const Category = ({ jobList }) => {
       role="tablist"
       aria-orientation="vertical"
     >
-      {jobList.map((job) => (
+      {jobList.map((job, index) => (
         <button
-          className={`nav-link ${
-            job.job_title === "WEB DEVELOPER" && "active"
-          }`}
+          className={`nav-link ${index == 0 && "active"}`}
           type="button"
           role="tab"
           onClick={(e) => handleChange(e, job.job_title)}
@@ -41,38 +39,7 @@ const Category = ({ jobList }) => {
         </button>
       ))}
 
-      {/* <button
-        className="nav-link active"
-        type="button"
-        role="tab"
-        onClick={(e) => handleChange(e, "web-developer")}
-      >
-        Web Developer
-      </button>
-      <button
-        className="nav-link"
-        type="button"
-        role="tab"
-        onClick={(e) => handleChange(e, "android-developer")}
-      >
-        Android Developer
-      </button>
-      <button
-        className="nav-link"
-        type="button"
-        role="tab"
-        onClick={(e) => handleChange(e, "digital-marketer")}
-      >
-        Digital Marketer
-      </button>
-      <button
-        className="nav-link"
-        type="button"
-        role="tab"
-        onClick={(e) => handleChange(e, "ui-ux-designer")}
-      >
-        UI/UX Designer
-      </button> */}
+      
     </div>
   );
 };
