@@ -35,18 +35,29 @@ const Requirements = ({ job }) => {
       {joinForm && <PopUpJoinForm />}
 
       <div className="requirements">
+      <h2 className="h1 text-uppercase mb-4 font-bold">{job_title}</h2>
+
         <div className="d-flex gap-2 justify-content-end align-items-end mb-3">
           <button onClick={() => applyNow()} className="btn btn-primary">
             Apply Now
           </button>
           <div className="card gap-2 px-3 flex-row" style={{ padding: "7px" }}>
             <div>
-              <i className="fa fa-share text-secondary"></i> Share:
+              <i  className="fa fa-share text-secondary"></i> Share:
             </div>
             <div className="d-flex gap-3 align-items-center">
-              <i style={{color:"#3b5998"}} className="fa fa-facebook cursor-pointer"></i>
-              <i style={{color:"#0077B5 "}} className="fa fa-linkedin cursor-pointer"></i>
-              <i style={{color:"#25D366"}} className="fa fa-whatsapp cursor-pointer"></i>
+              <i
+                style={{ color: "#3b5998",fontSize:"18px" }}
+                className="fa fa-facebook cursor-pointer"
+              ></i>
+              <i
+                style={{ color: "#0077B5 " }}
+                className="fa fa-linkedin cursor-pointer"
+              ></i>
+              <i
+                style={{ color: "#25D366" }}
+                className="fa fa-whatsapp cursor-pointer"
+              ></i>
             </div>
           </div>
           <div className="card cursor-pointer" style={{ padding: "10px" }}>
@@ -83,13 +94,28 @@ const Requirements = ({ job }) => {
             </div>
             <div className="col-lg-4">
               <p>
-                Published: <b>11 Jul 2024</b>
+                Workplace: <b>At Office</b>
+              </p>
+            </div>
+            <div className="col-lg-4">
+              <p>
+                Employeement Status: <b>Part Time</b>
+              </p>
+            </div>
+            <div className="col-lg-4">
+              <p>
+                Published Date: <b>11 Jul 2024</b>
+              </p>
+            </div>
+            <div className="col-lg-4">
+              <p>
+                Deadline: <b>11 Jul 2024</b>
               </p>
             </div>
           </div>
         </div>
 
-        <h2 className="h1 text-uppercase mb-4 font-bold">{job_title}</h2>
+      
         {/* role */}
         <div className="mb-4">
           <h3 className="h3">Role</h3>
@@ -124,17 +150,9 @@ const Requirements = ({ job }) => {
             {convertHTMLToJSX(experience_requirements)}
           </ul>
         </div>
-        {/* location */}
-        <div className="mb-4">
-          <h3 className="h3">Location</h3>
-          <ul className="ml-5" style={{ listStyle: "disc" }}>
-            <li className="ml-5">{job_location}</li>
-          </ul>
-        </div>
+        
         {/* call to action apply now */}
-        <button onClick={() => applyNow()} className="btn btn-lg btn-primary">
-          Apply Now
-        </button>
+       
       </div>
     </>
   );

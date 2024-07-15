@@ -36,7 +36,7 @@ const Company = () => {
       <div className="row mb-3">
         {/* company about column */}
         <div className="company-col-1 col-lg-5">
-          <p>{truncateParagraph(siteInfo.site_description, 240)}</p>
+          <p>{siteInfo.site_description}</p>
         </div>
         {/* as column */}
         <div className="company-col-2 col-lg-3 d-flex flex-column align-items-center">

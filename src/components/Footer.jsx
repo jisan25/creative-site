@@ -23,7 +23,19 @@ const Footer = () => {
                   }}
                 />
               </a>
-              <p>{siteInfo.site_description}</p>
+              {/* <p>{siteInfo.site_description}</p> */}
+              <p>
+                Creative Software Ltd is an IT and IT-enabled service provider.
+                Under one roof, businesses can obtain services like Software
+                Development, Website Development, App Development, Digital
+                Marketing, and Business Process Outsourcing. We have been
+                providing services to various companies in the country and
+                abroad for the past eight years. Our services are uniquely
+                crafted to meet clients' business needs, and they are vetted by
+                our experienced subject matter experts and QA team. We believe
+                in an innovative, collaborative, and progressive work culture
+                that remains committed to providing quality services.
+              </p>
               {/* social */}
               <div className="social-as d-flex align-items-center justify-content-start gap-3 mt-4">
                 <div
